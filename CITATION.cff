@@ -1,0 +1,10 @@
+
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Beliaev"
+  given-names: "Mark"
+title: "Interior Point Impementation for Pickup and Delivery"
+version: 1.0.0
+date-released: 2023-03-17
+url: "https://github.com/mbeliaev1/mdrp
