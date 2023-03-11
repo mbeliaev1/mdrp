@@ -1,0 +1,88 @@
+Intiailzing
+----------------------------------------------------------------
+{'min_dph': 5.0, 'max_dph': 100.0, 'demand': 0.99, 'max_rho': 0.9, 'max_cost': 10000, 'min_price': 5, 'inst_path': '0o50t75s1p100'}
+----------------------------------------------------------------
+Objective value at iteration #0 is - 0.244627
+Objective value at iteration #1 is - 0.244133
+Objective value at iteration #2 is - 0.160618
+Objective value at iteration #3 is - 0.160605
+Objective value at iteration #4 is - 0.159458
+Objective value at iteration #5 is - 0.1585
+Objective value at iteration #6 is - 0.156471
+Objective value at iteration #7 is - 0.156134
+Objective value at iteration #8 is - 0.156134
+Objective value at iteration #9 is - 0.15484
+Objective value at iteration #10 is - 0.153444
+Objective value at iteration #11 is - 0.153248
+Objective value at iteration #12 is - 0.153248
+Objective value at iteration #13 is - 0.152458
+Objective value at iteration #14 is - 0.152458
+Objective value at iteration #15 is - 0.152458
+Objective value at iteration #16 is - 0.152458
+Objective value at iteration #17 is - 0.152458
+Objective value at iteration #18 is - 0.15211
+Objective value at iteration #19 is - 0.15044
+Objective value at iteration #20 is - 0.147999
+Objective value at iteration #21 is - 0.143529
+Objective value at iteration #22 is - 0.137119
+Objective value at iteration #23 is - 0.134521
+Objective value at iteration #24 is - 0.13013
+Objective value at iteration #25 is - 0.127962
+Objective value at iteration #26 is - 0.127026
+Objective value at iteration #27 is - 0.126096
+Objective value at iteration #28 is - 0.125651
+Objective value at iteration #29 is - 0.12514
+Objective value at iteration #30 is - 0.124905
+Objective value at iteration #31 is - 0.124651
+Objective value at iteration #32 is - 0.124461
+Objective value at iteration #33 is - 0.124302
+Objective value at iteration #34 is - 0.124221
+Objective value at iteration #35 is - 0.124098
+Objective value at iteration #36 is - 0.123995
+Objective value at iteration #37 is - 0.123956
+Objective value at iteration #38 is - 0.123882
+Objective value at iteration #39 is - 0.123798
+Objective value at iteration #40 is - 0.123764
+Objective value at iteration #41 is - 0.123741
+Objective value at iteration #42 is - 0.123678
+Objective value at iteration #43 is - 0.123602
+Objective value at iteration #44 is - 0.123545
+Objective value at iteration #45 is - 0.12348
+Objective value at iteration #46 is - 0.123417
+Objective value at iteration #47 is - 0.123369
+Objective value at iteration #48 is - 0.123312
+Objective value at iteration #49 is - 0.123264
+Objective value at iteration #50 is - 0.123194
+Objective value at iteration #51 is - 0.123178
+Objective value at iteration #52 is - 0.123119
+Objective value at iteration #53 is - 0.123103
+Objective value at iteration #54 is - 0.123045
+Objective value at iteration #55 is - 0.123012
+Objective value at iteration #56 is - 0.122976
+Objective value at iteration #57 is - 0.122913
+Objective value at iteration #58 is - 0.122912
+Objective value at iteration #59 is - 0.122862
+Objective value at iteration #60 is - 0.122843
+Objective value at iteration #61 is - 0.122801
+Objective value at iteration #62 is - 0.122787
+Objective value at iteration #63 is - 0.122771
+Objective value at iteration #64 is - 0.122756
+Objective value at iteration #65 is - 0.122726
+Objective value at iteration #66 is - 0.122708
+Objective value at iteration #67 is - 0.122664
+Objective value at iteration #68 is - 0.122655
+Objective value at iteration #69 is - 0.122617
+Objective value at iteration #70 is - 0.122612
+Problem Evlatuation
+--------------------------------------------------------
+Orders Demanded (order/hour): 853.79
+Maximum Cost ($/hour): 10000.00
+--------------------------------------------------------
+Mode 			|cars	|drones	|droids	|total	|
+----------------|-------|-------|-------|-------|
+Orders (%)		|0.23	|0.65	|0.13	|1.00	|
+Op. Cost ($/hr)	|1927.53	|2760.72	|544.47	|5232.72	|
+Utilization (%)	|0.90	|0.90	|0.84	|0.89	|
+D Time(min.)	|11.49	|5.34	|10.29	|7.36	|
+Order Price		|5.76	|7.36	|5.10	|6.71	|
+Price per hour	|30.58	|86.56	|33.51	|67.15	|

@@ -1,0 +1,103 @@
+Intiailzing
+----------------------------------------------------------------
+{'min_dph': 5.0, 'max_dph': 100.0, 'demand': 0.99, 'max_rho': 0.9, 'max_cost': 10000, 'min_price': 5, 'inst_path': 'test'}
+----------------------------------------------------------------
+Prob Setup
+----------------------------------------------------------------
+Parameter: s_time 
+Value:
+ [0.08333333 0.08333333 0.08333333]
+-----------------------------
+Parameter: t_time 
+Value:
+ [[0.75       0.25       0.33333333]
+ [0.5        0.16666667 0.41666667]
+ [0.16666667 0.16666667 0.5       ]
+ [0.16666667 0.13333333 0.33333333]
+ [0.16666667 0.08333333 0.33333333]]
+-----------------------------
+Parameter: cost 
+Value:
+ [[10  5  5]
+ [10  5  5]
+ [10  5  5]
+ [10  5  5]
+ [10  5  5]]
+-----------------------------
+Parameter: beta 
+Value:
+ [[0.5 0.5 0.5]
+ [0.5 0.5 0.5]
+ [0.5 0.5 0.5]
+ [0.5 0.5 0.5]
+ [0.5 0.5 0.5]]
+-----------------------------
+Parameter: N 
+Value:
+ [10. 10. 10.]
+-----------------------------
+Parameter: k 
+Value:
+ [0.16666667 0.16666667 0.16666667]
+-----------------------------
+Parameter: mu 
+Value:
+ [2 4 3]
+-----------------------------
+Parameter: max_rho 
+Value:
+ 0.9
+-----------------------------
+Parameter: max_cost 
+Value:
+ 10000
+-----------------------------
+Parameter: demand 
+Value:
+ 0.99
+-----------------------------
+----------------------------------------------------------------
+Objective value at iteration #0 is - 0.381744
+Objective value at iteration #1 is - 0.381175
+Objective value at iteration #2 is - 0.352922
+Objective value at iteration #3 is - 0.349825
+Objective value at iteration #4 is - 0.317823
+Objective value at iteration #5 is - 0.302256
+Objective value at iteration #6 is - 0.3149
+Objective value at iteration #7 is - 0.32219
+Objective value at iteration #8 is - 0.32219
+Objective value at iteration #9 is - 0.32219
+Objective value at iteration #10 is - 0.32219
+Objective value at iteration #11 is - 0.32219
+Objective value at iteration #12 is - 0.32219
+Objective value at iteration #13 is - 0.32219
+Objective value at iteration #14 is - 0.32219
+Objective value at iteration #15 is - 0.32219
+Objective value at iteration #16 is - 0.32219
+Objective value at iteration #17 is - 0.32219
+Objective value at iteration #18 is - 0.305055
+Objective value at iteration #19 is - 0.30036
+Objective value at iteration #20 is - 0.300853
+Objective value at iteration #21 is - 0.299106
+Objective value at iteration #22 is - 0.293397
+Objective value at iteration #23 is - 0.292733
+Objective value at iteration #24 is - 0.291286
+Objective value at iteration #25 is - 0.289784
+Objective value at iteration #26 is - 0.289737
+Objective value at iteration #27 is - 0.289685
+Objective value at iteration #28 is - 0.289684
+Objective value at iteration #29 is - 0.289684
+Objective value at iteration #30 is - 0.289684
+Problem Evlatuation
+--------------------------------------------------------
+Orders Demanded (order/hour): 80.19
+Maximum Cost ($/hour): 10000.00
+--------------------------------------------------------
+Mode 			|cars	|drones	|droids	|total	|
+----------------|-------|-------|-------|-------|
+Orders (%)		|0.22	|0.45	|0.33	|1.00	|
+Op. Cost ($/hr)	|180.00	|180.00	|130.95	|490.95	|
+Utilization (%)	|0.90	|0.90	|0.87	|0.89	|
+D Time(min.)	|15.20	|12.75	|25.25	|17.38	|
+Order Price		|6.72	|6.59	|6.27	|6.52	|
+Price per hour	|26.52	|31.93	|14.91	|25.16	|

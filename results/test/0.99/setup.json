@@ -1,0 +1,9 @@
+{
+    "min_dph": 5.0,
+    "max_dph": 100.0,
+    "demand": 0.99,
+    "max_rho": 0.9,
+    "max_cost": 10000,
+    "min_price": 5,
+    "inst_path": "test"
+}
