@@ -38,7 +38,7 @@ def main(args):
     parameters['speeds'] = [1,2,0.3]
     parameters['N_ratios'] = [1,1,1]
     parameters['u_ratios'] = [1,0.2,0.2]
-
+    parameters['scale'] = False # if true then scales demand to be 0.99 of possible util
     isinstance_path = os.path.join('instances/',args.inst_path)
     prob_setup = convert_instance(isinstance_path,parameters)
     # add additional parameters

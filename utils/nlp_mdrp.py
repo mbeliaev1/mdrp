@@ -38,9 +38,11 @@ class mdrp_prob:
 
         self.n_orders = self.t_time.shape[0]
         self.n_modes = self.t_time.shape[1]
-
-        self.demand = self._get_max_demand()*prob_setup['demand']
-
+        
+        if prob_setup['scale']:
+            self.demand = self._get_max_demand()*prob_setup['demand']
+        else:
+            self.demand = prob_setup['demand']
     # HELPERS 
     def get_bounds(self,):
         lb = np.zeros(self.n_orders*self.n_modes)
