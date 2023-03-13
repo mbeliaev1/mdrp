@@ -16,10 +16,6 @@ List of the requirements needed to run the code, as well as instructions on how 
 
 Summary of the sub-directories and files found within this project.
 
-[III. Usage](#iii.-usage)
-
-Summary of the sub-directories and files found within this project.
-
 ## I. Installation 
 
 We recommend using pacakge manager [pip](https://pip.pypa.io/en/stable/) as well as 
@@ -47,4 +43,3 @@ The script **run.py** loads the corresponding instance and runs the ip-opt algor
 
 The script **eval.py** loads the corresponding solution and evaluates it by providing relevant statistics such as prices, average travel time, cost, etc. 
 
-## III. Usage
