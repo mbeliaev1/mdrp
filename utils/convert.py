@@ -12,6 +12,8 @@ def convert_instance(path, parameters):
 
     '''
     prob_setup = {}
+    # seed for reproducing
+    rng = np.random.default_rng(1)
     if path != 'test':
         orders,restaurants,couriers,instanceparams,locations,meters_per_minute,\
         pickup_service_minutes,dropoff_service_minutes,target_click_to_door,\
@@ -43,7 +45,7 @@ def convert_instance(path, parameters):
         N = np.array(parameters['N'])
 
         car_locs = np.array([couriers.x,couriers.y]).T
-        car_locs = car_locs[np.random.choice(10,5)] # sample N
+        car_locs = car_locs[rng.choice(10,5)] # sample N
         # N = np.array(parameters['N_ratios'])*len(car_locs)
         # print(N)
         k = np.ones(n_modes)*10/60 # 10 minutes around center
@@ -53,15 +55,15 @@ def convert_instance(path, parameters):
         n_drones = N[1]
         grid_x = [restaurants.x.min(),restaurants.x.max()]
         grid_y = [restaurants.y.min(),restaurants.y.max()]
-        drone_locs = np.array([grid_x[0]+np.random.rand(n_drones)*(grid_x[1]-grid_x[0]),
-                            grid_y[0]+np.random.rand(n_drones)*(grid_y[1]-grid_y[0])]).T
+        drone_locs = np.array([grid_x[0]+rng.random(n_drones)*(grid_x[1]-grid_x[0]),
+                            grid_y[0]+rng.random(n_drones)*(grid_y[1]-grid_y[0])]).T
 
         # n_droids = len(car_locs)*parameters['N_ratios'][2]
         n_droids = N[2]
         grid_x = [restaurants.x.mean()-0.5*restaurants.x.std(),restaurants.x.mean()+0.5*restaurants.x.std()]
         grid_y = [restaurants.y.mean()-0.5*restaurants.y.std(),restaurants.y.mean()+0.5*restaurants.y.std()]
-        droid_locs = np.array([grid_x[0]+np.random.rand(n_droids)*(grid_x[1]-grid_x[0]),
-                            grid_y[0]+np.random.rand(n_droids)*(grid_y[1]-grid_y[0])]).T
+        droid_locs = np.array([grid_x[0]+rng.random(n_droids)*(grid_x[1]-grid_x[0]),
+                            grid_y[0]+rng.random(n_droids)*(grid_y[1]-grid_y[0])]).T
 
         all_locs = [car_locs, drone_locs, droid_locs]
         # beta
