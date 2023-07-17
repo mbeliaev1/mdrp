@@ -67,7 +67,7 @@ class mdrp_prob:
         '''
         latency vector \ell_{i,j}
         '''
-        p_time = self.k/(1 + ((self.beta*self.N)/(1-self._get_util(x))))
+        p_time = self.k/(1 + self.beta*self.N*(1-self._get_util(x)))
         lat = p_time + self.s_time + self.t_time
         return lat
     
@@ -123,7 +123,7 @@ class mdrp_prob:
         lat = self._get_latency(x)
         
         denom = 1 + (self.beta*self.N)*(1-self._get_util(x)) 
-        numer = (self.k*mat_x)/(self.N*self.mu)
+        numer = (self.k*mat_x*self.beta)/(self.mu)
         left_part  = (numer/(denom**2)).sum(axis=0)
         grad = self._mat_to_vec(left_part + lat)
 
@@ -214,17 +214,17 @@ class mdrp_prob:
 
                 # compute part that sums over all i
                 denom = 1 + (self.beta[:,j_p]*self.N[j_p])*(1-util[j_p])
-                numer = (2*self.k[j_p]*mat_x[:,j_p])/((self.N[j_p]*self.mu[j_p])**2)
+                numer = (2*self.k[j_p]*mat_x[:,j_p]*(self.beta[:,j_p]**2))/(self.mu[j_p]**2)
                 row_h[:,j_p] = (numer/(denom**3)).sum()
 
                 # compute part that depends on i_p
                 denom = 1 + (self.beta[i_p,j_p]*self.N[j_p])*(1-util[j_p])
-                numer = self.k[j_p]/(self.N[j_p]*self.mu[j_p])
+                numer = (self.k[j_p]*self.beta[i_p,j_p])/(self.mu[j_p])
                 row_h[:,j_p] += numer/(denom**2)
 
                 # compute the part that depends on i
                 denom = 1 + (self.beta[:,j_p]*self.N[j_p])*(1-util[j_p])
-                numer = self.k[j_p]/(self.N[j_p]*self.mu[j_p])
+                numer = (self.k[j_p]*self.beta[:,j_p])/(self.mu[j_p])
                 row_h[:,j_p] += numer/(denom**2)
 
                 row_h /= self.n_orders
